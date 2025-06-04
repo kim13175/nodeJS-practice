@@ -16,11 +16,6 @@ const output = {
     }
 }
 
-const users = {
-    id: ["김보민", "김주경", "김인직"],
-    password: ["1234", "12345", "123456"],
-};
-
 const process = {
     login: (req, res) => {
         const user = new User(req.body);

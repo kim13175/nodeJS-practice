@@ -4,6 +4,7 @@
 const express = require('express');
 /* json 데이터 파싱위한 모듈 */
 const bodyParser = require('body-parser');
+const path = require('path');
 const app = express();
 
 /* routing 연결 */
@@ -11,7 +12,8 @@ const home = require('./src/routes/home');
 
 /* 앱 세팅 */
 app.set('view engine', 'ejs');
-app.set('views', './src/views');
+app.set('views', path.join(__dirname, 'src', 'views'));
+
 /* 정적 파일 경로로 추가 (js 파일 등) */
 app.use(express.static(`${__dirname}/src/public`));
 /* body parser middle ware 적용 */
