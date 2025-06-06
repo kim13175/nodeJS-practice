@@ -10,9 +10,6 @@ const executeLogin = () => {
         id: id.value,
         password: password.value
     }
-
-    // console.log(req); // object
-    // console.log(JSON.stringify(req)); // json 데이터화
     
     /* fetch를 통한 데이터 전달 */
     /* json은 promise형태로 반환되기에 then메서드를 한번 더 사용해야 함,
