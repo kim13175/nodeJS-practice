@@ -1,10 +1,14 @@
 'use strict';
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 /* 일반적인 서버 열기 */
 const express = require('express');
 /* json 데이터 파싱위한 모듈 */
 const bodyParser = require('body-parser');
 const path = require('path');
+
 const app = express();
 
 /* routing 연결 */

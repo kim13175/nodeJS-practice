@@ -1,7 +1,7 @@
 'use strict'
 
 const app = require('../app');
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 /* 이 코드가 있는 파일을 실행시켜야 함 */
 app.listen(PORT, function() {
