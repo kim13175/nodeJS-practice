@@ -13,3 +13,9 @@
   - JSON Pretty Print : JSON 파일 포매팅
 - AWS RDS DB 생성  
 ```
+
+
+### 🔘 참고 레퍼런스
+
+> ( c ) 우리밋 [nodejs] 백엔드 맛보기 
+> - https://www.youtube.com/playlist?list=PLSK4WsJ8JS4cQ-niGNum4bkK_THHOizTs 
