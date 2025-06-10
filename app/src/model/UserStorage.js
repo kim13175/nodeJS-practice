@@ -1,6 +1,6 @@
 'use strict';
 
-const fs = require('fs').promises;
+const db = require('../config/db');
 
 class UserStorage {
     /* 클래스 자체에서 접근하려 할 때는 정적 변수로 만들어줘야 함 */
@@ -32,34 +32,22 @@ class UserStorage {
 
     /* #을 이용해 은닉화 시키고 메서드로 전달 */
     static getUsers(isAll, ...fields) {
-        return fs.readFile('./app/src/DB/User.json', 'utf-8')
-         .then((data) => {
-            return this.#getUsers(data, isAll, fields);
-         })
-         .catch(console.error);
+        
     }
 
     static getUserInfo(id) {
-        return fs.readFile('./app/src/DB/User.json', 'utf-8')
-         .then((data) => {
-            return this.#getUserInfo(data, id);
-         })
-         .catch(console.error);
+        /* mysql은 프로미스를 직접 생성해야 함 */
+        return new Promise((resolve, reject) => {
+            db.query("SELECT * FROM users WHERE id = ?", [id], (err, data) => {
+                if(err) reject(err);
+                /* data 패킷만 보내줘야 함 */
+                resolve(data[0]);
+            });
+        });
     }
 
     static async save(userInfo) {
-        const users = await this.getUsers(true); // 모든 파라미터의 데이터를 가져오도록 함
-        if (users.id.includes(userInfo.id)) {
-            throw "이미 존재하는 아이디입니다.";
-        }
-        if (users.name.includes(userInfo.name)) {
-            throw "이미 존재하는 이름입니다.";
-        }
-        users.id.push(userInfo.id);
-        users.password.push(userInfo.password);
-        users.name.push(userInfo.name);
-        fs.writeFile('./app/src/DB/User.json', JSON.stringify(users));
-        return { success: true };
+
     }
 }
 
