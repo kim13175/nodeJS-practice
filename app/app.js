@@ -1,16 +1,17 @@
 'use strict';
 
-const dotenv = require('dotenv');
-dotenv.config();
-
 /* 일반적인 서버 열기 */
 const express = require('express');
 /* json 데이터 파싱위한 모듈 */
 const bodyParser = require('body-parser');
 const path = require('path');
+const dotenv = require('dotenv');
+const morgan = require('morgan')
 
+dotenv.config();
 const app = express();
 
+const accessLogStream = require('../app/src/config/log');
 /* routing 연결 */
 const home = require('./src/routes/home');
 
@@ -24,6 +25,10 @@ app.use(express.static(`${__dirname}/src/public`));
 app.use(bodyParser.json());
 /* url 통해 전달되는 데이터에 한글, 공백 등의 문자 인코딩 관련 문제 해결 */
 app.use(bodyParser.urlencoded({extended: true}));
+
+/* api 테스트 */
+app.use(morgan('dev'));
+app.use(morgan('common', { stream : accessLogStream }));
 
 app.use('/', home); // middle ware 등록
 
