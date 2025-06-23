@@ -50,3 +50,49 @@
 2025-06-23 21:46:01 [nodejs 테스트] info : GET / 200 "회원가입 화면으로 이동"
 2025-06-23 21:46:01 [nodejs 테스트] info : GET /register 304 - - 19.097 ms
 
+2025-06-23 22:25:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 22:25:01 [nodejs 테스트] info : GET / 200 "회원가입 화면으로 이동"
+2025-06-23 22:25:01 [nodejs 테스트] info : GET /register 304 - - 18.368 ms
+
+2025-06-23 22:25:01 [nodejs 테스트] info : GET / 200 "홈 화면으로 이동"
+2025-06-23 22:25:01 [nodejs 테스트] info : GET / 304 - - 6.156 ms
+
+2025-06-23 22:25:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 22:25:01 [nodejs 테스트] info : GET /login 304 - - 21.262 ms
+
+2025-06-23 22:25:01 [nodejs 테스트] error : 
+            POST /login 400 Response: false, msg: Error: Table 'login_pr.abc' doesn't exist
+        
+2025-06-23 22:25:01 [nodejs 테스트] info : POST /login 400 67 - 59.239 ms
+
+2025-06-23 22:25:01 [nodejs 테스트] info : GET /.well-known/appspecific/com.chrome.devtools.json 404 187 - 3.735 ms
+
+2025-06-23 22:26:01 [nodejs 테스트] error : 
+            POST /login 400 Response: false, msg: Error: Table 'login_pr.abc' doesn't exist
+        
+2025-06-23 22:26:01 [nodejs 테스트] info : POST /login 400 67 - 27.192 ms
+
+2025-06-23 22:26:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 22:30:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 22:32:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 22:32:01 [nodejs 테스트] info : 
+            POST /login 200 Response: true, msg: 
+        
+2025-06-23 22:32:01 [nodejs 테스트] info : POST /login 200 16 - 52.265 ms
+
+2025-06-23 22:32:01 [nodejs 테스트] info : GET / 304 "홈 화면으로 이동"
+2025-06-23 22:32:01 [nodejs 테스트] info : GET / 304 - - 9.399 ms
+
+2025-06-23 22:32:01 [nodejs 테스트] info : GET /.well-known/appspecific/com.chrome.devtools.json 404 187 - 1.911 ms
+
+2025-06-23 22:32:01 [nodejs 테스트] info : GET / 304 "로그인 화면으로 이동"
+2025-06-23 22:32:01 [nodejs 테스트] info : GET /login 200 1026 - 3.220 ms
+
+2025-06-23 22:32:01 [nodejs 테스트] info : GET /.well-known/appspecific/com.chrome.devtools.json 404 187 - 0.937 ms
+
+2025-06-23 22:32:01 [nodejs 테스트] info : 
+            POST /login 200 Response: false, msg: 존재하지 않는 아이디 입니다.
+        
+2025-06-23 22:32:01 [nodejs 테스트] info : POST /login 200 66 - 35.491 ms
+
+2025-06-23 22:33:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.

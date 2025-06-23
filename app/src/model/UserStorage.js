@@ -36,7 +36,7 @@ class UserStorage {
     }
 
     static getUserInfo(id) {
-        const query = "SELECT * FROM abc WHERE id = ?;";
+        const query = "SELECT * FROM users WHERE id = ?;";
         /* mysql은 프로미스를 직접 생성해야 함 */
         return new Promise((resolve, reject) => {
             db.query(query, [id], (err, data) => {
@@ -48,7 +48,7 @@ class UserStorage {
     }
 
     static async save(userInfo) {
-        const query = "INSERT INTO abc(id, name, password) VALUES(?, ?, ?);";
+        const query = "INSERT INTO users(id, name, password) VALUES(?, ?, ?);";
         /* mysql은 프로미스를 직접 생성해야 함 */
         return new Promise((resolve, reject) => {
             db.query(query, [userInfo.id, userInfo.name, userInfo.password], (err) => {
