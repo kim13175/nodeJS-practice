@@ -21,7 +21,7 @@ class User {
             }
             return { success: false, msg: '존재하지 않는 아이디 입니다.' };
         } catch (err) {
-            return { success : false, msg: `잘못된 회원 정보입니다.` };
+            return { success : false, err };
         }
     }
 
@@ -31,7 +31,7 @@ class User {
             const response = await UserStorage.save(client);
             return response;    
         } catch(err) {
-            console.error(err);
+            return { success: false, err }; 
         }
     }
 }

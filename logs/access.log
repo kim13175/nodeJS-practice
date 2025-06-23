@@ -1,19 +1,52 @@
-2025-06-23 20:56:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 20:57:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 20:57:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 20:58:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 20:59:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 21:01:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 21:04:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 21:04:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 21:06:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 21:06:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 21:08:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 21:08:01 [nodejs 테스트] info : 서버 가동
-2025-06-23 21:09:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 21:09:01 [nodejs 테스트] info : 3000 서버 가동
-2025-06-23 21:09:01 [nodejs 테스트] error : hi, nice to meet you
-2025-06-23 21:09:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
-2025-06-23 21:10:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
-2025-06-23 21:10:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
-2025-06-23 21:10:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:14:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:16:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:17:01 [nodejs 테스트] info : GET / 200 "회원가입 화면으로 이동"
+2025-06-23 21:17:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:20:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:20:01 [nodejs 테스트] info : POST /login 200 Response: "success: false, msg: 잘못된 회원 정보입니다."
+2025-06-23 21:20:01 [nodejs 테스트] info : POST /login 200 Response: "success: true, msg: undefined"
+2025-06-23 21:20:01 [nodejs 테스트] info : GET / 200 "홈 화면으로 이동"
+2025-06-23 21:20:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:23:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:23:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:23:01 [nodejs 테스트] info : POST /login 200 Response: "success: false, msg: 잘못된 회원 정보입니다."
+2025-06-23 21:23:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:24:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:25:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:25:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:26:01 [nodejs 테스트] info : POST /login 200 Response: "success: false, msg: 잘못된 회원 정보입니다."
+2025-06-23 21:26:01 [nodejs 테스트] info : POST /login 200 Response: "success: false, msg: 잘못된 회원 정보입니다."
+2025-06-23 21:27:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:28:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:28:01 [nodejs 테스트] info : POST /login 200 Response: "success: false, msg: undefined"
+2025-06-23 21:28:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:28:01 [nodejs 테스트] info : POST /login 200 Response: "success: false, msg: undefined"
+2025-06-23 21:29:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:29:01 [nodejs 테스트] info : POST /login 200 Response: "success: false, msg: undefined"
+2025-06-23 21:30:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:30:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:30:01 [nodejs 테스트] info : POST /login 200 Response: "success: false, msg: undefined"
+2025-06-23 21:34:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:35:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:35:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:37:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:37:01 [nodejs 테스트] error : POST /login 200 Response: "success: false, msg: Error: Table 'login_pr.abc' doesn't exist"
+2025-06-23 21:38:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:38:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:38:01 [nodejs 테스트] error : POST /login 200 Response: "success: false, msg: Error: Table 'login_pr.abc' doesn't exist"
+2025-06-23 21:39:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:41:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:41:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:41:01 [nodejs 테스트] info : GET / 200 "로그인 화면으로 이동"
+2025-06-23 21:41:01 [nodejs 테스트] info : GET / 200 "회원가입 화면으로 이동"
+2025-06-23 21:42:01 [nodejs 테스트] error : POST /login 200 Response: "success: false
+2025-06-23 21:43:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:45:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:45:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:45:01 [nodejs 테스트] info : GET / 200 "회원가입 화면으로 이동"
+2025-06-23 21:45:01 [nodejs 테스트] info : ::1 - - [23/Jun/2025:12:45:57 +0000] "GET /register HTTP/1.1" 200 1202
+
+2025-06-23 21:46:01 [nodejs 테스트] info : 3000 포트에서 서버가 가동되었습니다.
+2025-06-23 21:46:01 [nodejs 테스트] info : GET / 200 "회원가입 화면으로 이동"
+2025-06-23 21:46:01 [nodejs 테스트] info : GET /register 304 - - 19.097 ms
+
