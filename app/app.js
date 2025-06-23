@@ -6,12 +6,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const dotenv = require('dotenv');
-const morgan = require('morgan')
+//const morgan = require('morgan');
 
 dotenv.config();
 const app = express();
 
-const accessLogStream = require('../app/src/config/log');
+// const accessLogStream = require('../app/src/config/log');
 /* routing 연결 */
 const home = require('./src/routes/home');
 
@@ -27,8 +27,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 /* api 테스트 */
-app.use(morgan('dev'));
-app.use(morgan('common', { stream : accessLogStream }));
+// app.use(morgan('dev'));
+// app.use(morgan('common', { stream : accessLogStream }));
 
 app.use('/', home); // middle ware 등록
 
